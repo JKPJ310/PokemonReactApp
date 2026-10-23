@@ -19,14 +19,12 @@ function Home() {
 
   return (
     <div>
-      <h1>Pokémon</h1>
-      <ul>
+      <h1 className="mb-6 text-3xl font-bold">Browse Pokémon</h1>
+      <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
         {pokemon.map((p) => (
-          <li key={p.name}>
-            <Link to={`/pokemon/${p.name}`}>{p.name}</Link>
-          </li>
+          <PokemonCard key={p.name} {...p} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
