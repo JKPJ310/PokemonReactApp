@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getPokemonList } from "../api/pokemon";
+import PokemonCard from "../components/PokemonCard";
 
 function Home() {
   const [pokemon, setPokemon] = useState([]);

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getPokemonDetails } from "../api/pokemon";
-import { typeColors } from "../utils/typeColors";
+import typeColors from "../utils/typeColors";
 
 function PokemonDetails() {
   const { name } = useParams();
